@@ -1,0 +1,6 @@
+{
+  "name": "TripNest",
+  "description": "Plan Your Journey, Explore the World. Discover multi-modal travel routes, verified stays, must-visit places, interactive day-by-day itineraries, and traveler reviews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
