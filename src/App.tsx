@@ -17,6 +17,7 @@ import { StaysPage } from './pages/StaysPage';
 import { MyTripsPage } from './pages/MyTripsPage';
 import { ReviewsPage } from './pages/ReviewsPage';
 import { UserProfileView } from './components/profile/UserProfileView';
+import { TripNestAIChatbox } from './components/chat/TripNestAIChatbox';
 import { CheckCircle2 } from 'lucide-react';
 
 const AppContent: React.FC = () => {
@@ -27,7 +28,7 @@ const AppContent: React.FC = () => {
       
       {/* Toast Notification */}
       {notification && (
-        <div className="fixed bottom-6 right-6 z-50 bg-slate-900 text-white px-4 py-3 rounded-2xl shadow-2xl border border-slate-700 flex items-center gap-2.5 text-xs animate-in slide-in-from-bottom-5 duration-200">
+        <div className="fixed top-20 right-6 z-50 bg-slate-900 text-white px-4 py-3 rounded-2xl shadow-2xl border border-slate-700 flex items-center gap-2.5 text-xs animate-in slide-in-from-top-4 duration-200">
           <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
           <span className="font-medium">{notification}</span>
         </div>
@@ -54,9 +55,10 @@ const AppContent: React.FC = () => {
       {/* Site Footer */}
       <Footer />
 
-      {/* Global Interactive Modals */}
+      {/* Global Interactive Modals & Floating AI Chat */}
       <AuthModal />
       <GlobalSearchModal />
+      <TripNestAIChatbox />
 
     </div>
   );
